@@ -4,6 +4,9 @@ div
     h3 внутренний компонент
     h4 {{msg}}
     input(type="text" v-bind="$attrs")
+    button(
+      v-on="$listeners"
+    ) click
 </template>
 
 <script>

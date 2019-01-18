@@ -4,6 +4,7 @@ div
   h3.jjjjj tt
   innerComp(
     placeholder="ff2ff gggggg"
+    @click="handleClick"
   )
 </template>
 
@@ -18,6 +19,12 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods:{
+    handleClick(event){
+      console.log('handleClick', event.target);
+      
     }
   }
 }
