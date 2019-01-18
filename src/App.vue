@@ -1,27 +1,20 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+<template lang="pug">
+div
+
+  h3.jjjjj tt
+  innerComp(
+    placeholder="ff2ff gggggg"
+  )
 </template>
 
 <script>
+import inner from './components/inner'
+
 export default {
   name: 'app',
+  components:{
+    innerComp: inner
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -30,7 +23,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -56,5 +49,8 @@ li {
 
 a {
   color: #42b983;
+}
+.jjjjj {
+  color: red;
 }
 </style>
